@@ -1,0 +1,58 @@
+The permission viewer application is a diagnostic tool for viewing permissions in the Telligent Evolution platform.  It allows you to view permissions in a tabular form which can make diagnosing permission based issues easier.
+
+It uses the Telligent Evolution platform REST API to pull data out of a Telligent Evolution platform community.
+
+#########################
+# Set up your Community #
+#########################
+
+This application uses the REST API to communicate with the Telligent Evolution platform.  You must first enable the REST API and then generate an API Key for your user account.
+
+###################################
+# Connecting with the Application #
+###################################
+
+1. In the connection area at the Enter the URL to your Telligent Evolution platform community and hit Connect 
+2. The Application will try and connect to your website.  After a moment a new row will pop up asking for your Username and API Key.  Depending on how your community is configured, you may also be required to enter a password.  Enter the requires details and then hit Login 
+
+#######################################
+# Understanding the Permission Report #
+#######################################
+
+The permission report is displayed as a grid with roles listed along the top of the table, and a list of permissions down the left hand side.  If a role is granted a permission, the cell corresponding to the permission and role will have a green colour with an X in.
+
+Roles are always listed in the following order: Everyone, Registered Users,Members, Managers, Owners, Moderators, Administrators, OTHER ROLES 
+
+If you do not see a role listed in the table, that means the role has no permissions for that application
+
+######################################################
+# Viewing  Permissions for an Individual Application #
+######################################################
+
+In order to view permissions for a particular application, you first need to select an application.  After doing this, permissions will be displayed in a table in the Permission Display area on the right.  There are two ways of selecting an application:
+
+-----------------------------
+ Browsing for an Application 
+-----------------------------
+1.Select the Browse tab in the Application Selector area 
+2.Browse through the tree to find the application you want to view permissions for 
+3.Click on the Application to view it’s permissions 
+
+------------------------------
+ Searching for an Application
+------------------------------
+Click on the search tab in the Application Selector area 
+In the search box, type in your search query then hit Search to search for applications 
+Click on the Application you want to view permissions for 
+Viewing Site Wide Permissions
+When you first connect to your community, you will be shown Site Wide permissions.  If you have started viewing permissions for an individual application, you can return to this page by hitting the Show Site Permissions button in the bottom right
+
+################################
+# Exporting Permission Reports #
+################################
+
+You can export the permission grid for an application to an HTML report.  This HTML report will include the permissions for the currently selected application, and groups above it.
+
+1. View the permissions you wish to export
+2. Click on the “Export Permission Report” button in the bottom right 
+3. In the Save As dialogue, choose a location to save the report and press Save. 
